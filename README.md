@@ -11,8 +11,11 @@ App criado com os conhecimentos adquiridos dos estudos com o [Next.js](https://n
 Movie app com funcionalidades de buscar e ver detalhes de filmes escolhidos.
 
 ## Api's and Lib's
+- [Next.js](https://nextjs.org/)
+- [React](https://pt-br.reactjs.org/)
 - [The Movie Database](https://www.themoviedb.org/?language=pt-BR)
 - [React Icons](https://react-icons.github.io/react-icons/)
+
 
 ## Getting Started
 
