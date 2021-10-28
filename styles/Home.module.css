@@ -23,6 +23,7 @@
   background-color: #444;
   border-radius: 3px;
   transition: all 0.3s ease-in-out;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .movie img {
@@ -61,8 +62,7 @@
   width: 30%;
   background-color: #444;
   height: 40px;
-  padding-left: 10px;
-  padding-top: 3px;
+  padding-left: 20px;
   border-radius: 20px;
   justify-content: space-between;
 }
@@ -70,20 +70,28 @@
 .input_container input {
   background-color: transparent;
   width: 90%;
-  height: 35px;
+  height: 40px;
   border: none;
   outline: none;
   color: white;
+  font-weight: bold;
 }
 
 .input_container button {
   background-color: transparent;
-  border-radius: 5px;
+  border-radius: 20px;
   font-weight: bold;
   color: white;
   border: none;
+  outline: none;
   cursor: pointer;
-  width: 8%;
+  height: 40px;
+  font-size: 1em;
+  transition: all 0.3s ease-in-out;
+}
+
+.input_container button:hover {
+  color: gray;
 }
 
 .footer {

@@ -17,8 +17,8 @@ export async function getServerSideProps(context) {
 
 export default function MovieItem({ info }) {
   
-  const data = info.release_date = new Date()
-
+  const data = new Date(info.release_date)
+  
   const setVoteColor = (vote) => {
     if (vote >= 8) {
       return "green"

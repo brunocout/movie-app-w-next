@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useState } from 'react'
+import { FaSearch } from 'react-icons/fa';
 
 import styles from '../styles/Home.module.css'
 
@@ -45,8 +46,9 @@ export default function Home({list}) {
       <main className={styles.main}>
         <h1 className={styles.title}>Busca</h1>
         <div className={styles.input_container}>
-          <input type="text" value={searchText} onChange={e=>setSearchText(e.target.value)} placeholder="Digite o nome do filme..." onKeyDown={handleOnKeyDown}/>
-          <button onClick={handleSearch}>🔎</button>
+          <input type="text" value={searchText} onChange={e=>setSearchText(e.target.value)} placeholder="Digite o nome do filme..." onKeyDown={handleOnKeyDown} maxLength="50"
+          minLength="2"/>
+          <button onClick={handleSearch}><FaSearch/></button>
         </div>
 
         <div className={styles.movie_container}>
