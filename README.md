@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 App criado com os conhecimentos adquiridos do estudos com o [Next.js](https://nextjs.org/).
 
 <p>
-  <img width="700" src="assets/toReadme/movieapp.gif">
+  <img width="700" src="https://github.com/brunocout/movie-app-w-next/blob/main/assets/ToReadme/movieapp.gif">
 </p>
 
 ## Description
