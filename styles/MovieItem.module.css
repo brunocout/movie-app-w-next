@@ -1,0 +1,43 @@
+.container {
+    padding: 0 2rem;
+}
+  
+.main {
+    min-height: 100vh;
+    padding: 4rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie_container {
+    z-index: 1;
+    width: 50%;
+}
+
+.img_backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.3;
+}
+
+.main strong {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.main strong:hover {
+    color: gray;
+}
+
+.main span {
+    background-color: rgba(17, 17, 17, 0.418);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.637);
+}
+

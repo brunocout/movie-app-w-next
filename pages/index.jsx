@@ -24,7 +24,15 @@ export default function Home({list}) {
     }
   }
 
-  
+  const setVoteColor = (vote) => {
+    if (vote >= 8) {
+      return "green"
+    } else if (vote >= 6){
+      return "orange"
+    } else {
+      return "red"
+    }
+  }
 
   return (
     <div className={styles.container}>
@@ -47,7 +55,7 @@ export default function Home({list}) {
                 <a href={`/movie/${item.id}`}>
                   <img src={`https://image.tmdb.org/t/p/original${item.poster_path}`} width="150" alt="img"/> <br/>
                   <div className={styles.movie_info}>
-                    <h3>{item.title}</h3> <span>{item.vote_average}</span>
+                    <h3>{item.title}</h3> <span style={{color: `${setVoteColor(item.vote_average)}`}}>{item.vote_average}</span>
                   </div>
                 </a>
               </div>
